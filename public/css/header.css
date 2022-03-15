@@ -1,6 +1,88 @@
 /* HEADER */
 
-header {
+header.main_header {
     background-color: white;
-    height: 5rem;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position:fixed;
+    top: 0;
+    left: 0;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 5px 10px rgba(35, 179, 232, 0.3);
+}
+
+/* header logo */
+
+header.main_header .header-logo {
+    width: 50px;
+
+}
+
+header.main_header .header-logo img{
+    width: 100%;
+}
+
+/* menu */
+
+header.main_header .header_menuButton{
+
+}
+
+header.main_header .header_menuButton button {
+    border:none;
+    background-color: grey; /* no esta tomando color */
+    width: 30px;
+    height: 35px;
+    border-radius: 4px;
+    color:white;
+    font-size: 1.5rem;
+}
+
+/* header.main_header .header_menu {
+    display: none;
+} */
+
+header.main_header .header_menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
+header.main_header .header_menu .header-menuClose{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid grey; /* NO ME TOMA COLOR */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 1.5rem;
+}
+
+header.main_header .header_menu .header_avatar{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: red; /* no me toma color */
+    margin: 0 auto;
+    position: relative;
+}
+header.main_header .header_menu .header_avatar .avatar_session{
+    position: absolute;
+    border-radius: 50%;
+    background-color: green;
+    top:0;
+    right: 0;
+    width: 10px;
+    height: 10px;
 }
